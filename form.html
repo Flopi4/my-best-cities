@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запропонувати місто — Мої 3 найкращі міста світу</title>
+</head>
+<body>
+  <header>
+    <h1>Мої 3 найкращі міста світу</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="city-sofia.html">Софія</a>
+      <a href="city-budapest.html">Будапешт</a>
+      <a href="city-zagreb.html">Загреб</a>
+      <a href="form.html">Запропонувати місто</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Запропонувати місто для наступного рейтингу</h2>
+    <p>Поля, позначені *, обов'язкові.</p>
+    <form action="form.html" method="get">
+      <fieldset>
+        <legend>Про вас</legend>
+        <p>
+          <label for="name">Ваше ім'я *:</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email *:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Про місто</legend>
+        <p>
+          <label for="city">Назва міста *:</label><br>
+          <input type="text" id="city" name="city" required>
+        </p>
+        <p>
+          <label for="country">Країна *:</label><br>
+          <select id="country" name="country" required>
+            <option value="">— оберіть країну —</option>
+            <option value="ua">Україна</option>
+            <option value="pl">Польща</option>
+            <option value="it">Італія</option>
+            <option value="es">Іспанія</option>
+            <option value="us">США</option>
+            <option value="other">Інша</option>
+          </select>
+        </p>
+        <p>Тип пропозиції:</p>
+        <p>
+          <input type="radio" id="type-visited" name="type" value="visited" checked>
+          <label for="type-visited">Я там був(-ла)</label><br>
+          <input type="radio" id="type-dream" name="type" value="dream">
+          <label for="type-dream">Мрію відвідати</label>
+        </p>
+        <p>
+          <label for="visit-date">Коли ви були/плануєте бути:</label><br>
+          <input type="date" id="visit-date" name="visit_date">
+        </p>
+        <p>
+          <label for="reason">Чому варто відвідати це місто? *</label><br>
+          <textarea id="reason" name="reason" rows="5" cols="40" required></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Погоджуюся на обробку введених даних *</label>
+      </p>
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </form>
+  </main>
+  <footer>
+    <p>Автор: Процака Максим</p>
+    <p>Лабораторна робота 1, дисципліна «WEB-програмування», 2026</p>
+  </footer>
+</body>
+</html>
